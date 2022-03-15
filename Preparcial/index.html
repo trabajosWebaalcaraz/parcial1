@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css">
+    <title>Hello, world!</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
+</head>
+
+<body>
+    <script src="main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+
+    <script src="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.js">
+    </script>
+    <div class="row">
+        <div class="col-6 text-center">
+            <p class="titulo">Restaurant & Lounge</p>
+        </div>
+        <div class="col-3 text-center">
+            <div class="contObjetos"> </div>
+        </div>
+        <div class="col-3 text-center">
+            <div class="carrito"> </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="banner"> </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-12 fondoBotones">
+            <div class="row text-center">
+                <div class="col-10">
+                    <div class="row text-center">
+                        <div class="col-2">
+                            <p class="btnBurger" onclick="cambiarPag(0)"> Burger</p>
+                        </div>
+                        <div class="col-2">
+                            <p class="btnTacos" onclick="cambiarPag(1)"> Tacos</p>
+                        </div>
+                        <div class="col-2">
+                            <p class="btnSalads" onclick="cambiarPag(2)"> Salads</p>
+                        </div>
+                        <div class="col-2">
+                            <p class="btnDesserts" onclick="cambiarPag(3)"> Desserts</p>
+                        </div>
+                        <div class="col-2">
+                            <p class="btnDrinks" onclick="cambiarPag(4)"> Drinks & Sides</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-12">
+            <p class = "titleFood"> Burgers</p>
+        </div>
+        <div class = "col-3">
+            <img class = "imgProducto">
+            <p class="nombreProducto"></p>
+            <p class="contenidoProducto"></p>
+            <p class ="precioProducto"></p>
+            <button type="button" class="btnAnadir" onclick="anadir()">add to cart</button>
+
+        </div>
+    </div>
+    <div class = "row">
+
+
+    </div>
+
+
+</body>
+
+</html>
