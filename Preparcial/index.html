@@ -6,13 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="main.css">
     <title>Hello, world!</title>
 
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.16.0/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -33,17 +34,25 @@
         <div class="col-6 text-center">
             <p class="titulo">Restaurant & Lounge</p>
         </div>
-        <div class="col-3 text-center">
-            <div class="contObjetos"> </div>
+        <div class="col-4 text-center">
         </div>
-        <div class="col-3 text-center">
-            <div class="carrito"> </div>
+        <div class="col-1">
+            <div><img
+                    src="https://s3-alpha-sig.figma.com/img/119d/1140/f8d3ec8c2165b37fc19b49ee401715e9?Expires=1648425600&Signature=IOLI4tMRpjSvRfQ4eLQAjQxt544ivCbv5CTKzCGG4mUSyfh9uErpOrqg0ttHW2eZiE6eiV48iVwys2VB~YMklfcpr2e7pjPJPOFE3kCANW02mHz86vWq0TqHlfh1OGAdvaEluisjq5ECHW~00-woJCd8ZNODRFQaHPv~fiy8xgiUmtUy8Bo8gIJwlwhrNHi9MWU4Omuazsjz6h1dbivpjMxnY25U7SZVP3hEH7wv29vDc4OBbMURGEzlu8LTNlPz9ni00wrIfx7TNAGoPsJHukEKFkkF0uJbXJL1PULuzxsn5JtTJIMKK2J0YpfWCJ9IyLHNEPrwG1c3p867y2OLWw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+                    height="80" onclick="tablaCompra()">
+            </div>
         </div>
+        <div id="contObjetos" class="col-1">
+            0 items
+        </div>
+
 
     </div>
     <div class="row">
         <div class="col-12">
-            <div class="banner"> </div>
+            <div class="banner">
+
+            </div>
         </div>
 
     </div>
@@ -75,21 +84,62 @@
 
         </div>
     </div>
+
     <div class="row">
-
-        <div class="col-12">
-            <p class = "titleFood"> Burgers</p>
-        </div>
-        <div class = "col-3">
-            <img class = "imgProducto">
-            <p class="nombreProducto"></p>
-            <p class="contenidoProducto"></p>
-            <p class ="precioProducto"></p>
-            <button type="button" class="btnAnadir" onclick="anadir()">add to cart</button>
-
+        <div class="col-12 text-center">
+            <p id="titleFood"></p>
         </div>
     </div>
-    <div class = "row">
+
+    <div class="row" id="tabla">
+        <div class="col-2">
+        </div>
+        <div class="col-2">
+            <div class="bloqueOpcion">
+                <img id="imgProducto0" class="imgProducto">
+                <p id="nombreProducto0" class="nombreProducto"></p>
+                <p id="descripcionProducto0" class="descripcionProducto"></p>
+                <p id="precioProducto0" class="precioProducto"></p>
+                <div class="text-center">
+                    <button type="button" class="btnAnadir" onClick="anadir(0)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="bloqueOpcion">
+                <img id="imgProducto1" class="imgProducto">
+                <p id="nombreProducto1" class="nombreProducto"></p>
+                <p id="descripcionProducto1" class="descripcionProducto"></p>
+                <p id="precioProducto1" class="precioProducto"></p>
+                <div class="text-center">
+                    <button type="button" class="btnAnadir" onClick="anadir(1)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="bloqueOpcion">
+                <img id="imgProducto2" class="imgProducto">
+                <p id="nombreProducto2" class="nombreProducto"></p>
+                <p id="descripcionProducto2" class="descripcionProducto"></p>
+                <p id="precioProducto2" class="precioProducto"></p>
+                <div class="text-center">
+                    <button type="button" class="btnAnadir" onClick="anadir(2)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="bloqueOpcion">
+                <img id="imgProducto3" class="imgProducto">
+                <p id="nombreProducto3" class="nombreProducto"></p>
+                <p id="descripcionProducto3" class="descripcionProducto"></p>
+                <p id="precioProducto3" class="precioProducto"></p>
+                <div class="text-center">
+                    <button type="button" class="btnAnadir" onClick="anadir(3)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
 
 
     </div>
